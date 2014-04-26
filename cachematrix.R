@@ -1,15 +1,12 @@
-## TODO: 
-## Put comments here that give an overall description of what your
-## functions do
 
-
-## This function converts a convetional R matrix into a special matrix that is 
+## It should be mentioned that this functionality only works for asquare invertible matrix
+## This function converts a conventional R matrix into a special matrix that is 
 ## able to cache the compute-intensive inverse matrix.
 ##
-## The function returns a list containing fields that store function values: 
-##   * set        -> stores a new matrix value and clears the cache
+## The function returns a list containing fields that store functions: 
+##   * set        -> stores a new matrix and clears the cache
 ##   * get        -> returns the original matrix 
-##   * setinverse -> stores a new inserve matrix value cache 
+##   * setinverse -> stores a new inserve matrix into the cache 
 ##   * getinverse -> returns the cached inverse matrix, NULL if not cached
 makeCacheMatrix <- function(x = matrix()) {
 
